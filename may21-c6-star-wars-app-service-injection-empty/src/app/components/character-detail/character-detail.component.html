@@ -1,0 +1,11 @@
+<mat-card *ngIf="characterDetail" class="character-detail-container">
+  <h2>{{characterDetail.hair_color}}</h2>
+  <img [src]="characterDetail.img" class="image-container">
+  <vacation-rating [rating]="characterDetail.rating"></vacation-rating>
+
+
+
+  <p>Hair Color: {{characterDetail.hair_color}}</p>
+  <p>Skin Color: {{characterDetail.skin_color}}</p>
+
+</mat-card>
